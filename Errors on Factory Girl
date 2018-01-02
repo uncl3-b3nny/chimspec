@@ -1,0 +1,1009 @@
+Errors on Factory Girl
+create  test/fixtures/files/.keep
+	create  test/controllers
+	create  test/controllers/.keep
+	create  test/mailers
+	create  test/mailers/.keep
+	create  test/models
+	create  test/models/.keep
+	create  test/helpers
+	create  test/helpers/.keep
+	create  test/integration
+	create  test/integration/.keep
+	create  test/test_helper.rb
+	create  test/system
+	create  test/system/.keep
+	create  test/application_system_test_case.rb
+	create  tmp
+	create  tmp/.keep
+	create  tmp/cache
+	create  tmp/cache/assets
+	create  vendor
+	create  vendor/.keep
+	create  package.json
+	remove  config/initializers/cors.rb
+	remove  config/initializers/new_framework_defaults_5_1.rb
+	apply  https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+    composer
+    composer   _____       _ _
+    composer  |  __ \     (_) |       /\
+    composer  | |__) |__ _ _| |___   /  \   _ __  _ __  ___
+    composer  |  _  // _` | | / __| / /\ \ | '_ | '_ \/ __|
+    composer  | | \ \ (_| | | \__ \/ ____ \| |_) | |_) \__ \
+    composer  |_|  \_\__,_|_|_|___/_/    \_\ .__/| .__/|___/
+    composer                               | |   | |
+    composer                               | |   | |
+    composer
+    composer  Need help? Ask on Stack Overflow with the tag 'railsapps.'
+    composer  Your new application will contain diagnostics in its README file.
+    composer  You are using Rails version 5.1.4. Please report any issues.
+      insert    config/application.rb
+      recipe  Running core recipe...
+        core  selected all core recipes
+      recipe  Running git recipe...
+         git  initialize git
+      remove    .gitignore
+      create    .gitignore
+         run    git init from "."
+Reinitialized existing Git repository in /Users/old_faithful/workspace/chimspec/.git/
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: initial commit" from "."
+      recipe  Running railsapps recipe...
+      option  Build a starter application?
+          1)  Build a RailsApps example application
+          2)  Contributed applications (none available)
+          3)  Custom application (experimental)
+      choose  Enter your selection: 1
+      option  Choose a starter application.
+          1)  learn-rails
+          2)  rails-bootstrap
+          3)  rails-foundation
+          4)  rails-mailinglist-activejob
+          5)  rails-omniauth
+          6)  rails-devise
+          7)  rails-devise-roles
+          8)  rails-devise-pundit
+          9)  rails-signup-download
+         10)  rails-stripe-checkout
+         11)  rails-stripe-coupons
+         12)  rails-stripe-membership-saas
+      choose  Enter your selection: 8
+              Get on the mailing list for Rails Composer news?
+      option  Enter your email address:
+      recipe  Running learn_rails recipe...
+      recipe  Running rails_bootstrap recipe...
+      recipe  Running rails_foundation recipe...
+      recipe  Running rails_omniauth recipe...
+      recipe  Running rails_devise recipe...
+      recipe  Running rails_devise_roles recipe...
+      recipe  Running rails_devise_pundit recipe...
+      recipe  Running rails_signup_download recipe...
+      recipe  Running rails_mailinglist_activejob recipe...
+      recipe  Running rails_stripe_checkout recipe...
+      recipe  Running rails_stripe_coupons recipe...
+      recipe  Running rails_stripe_membership_saas recipe...
+      recipe  Running setup recipe...
+       setup  Your operating system is darwin16.7.0.
+       setup  You are using Ruby version 2.4.2.
+       setup  You are using Rails version 5.1.4.
+      option  Web server for development?
+          1)  Puma (default)
+          2)  Thin
+          3)  Unicorn
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
+      choose  Enter your selection: 1
+      option  Web server for production?
+          1)  Same as development
+          2)  Thin
+          3)  Unicorn
+          4)  Phusion Passenger (Apache/Nginx)
+          5)  Phusion Passenger (Standalone)
+      choose  Enter your selection: 1
+      option  Database used in development?
+          1)  SQLite
+          2)  PostgreSQL
+          3)  MySQL
+      choose  Enter your selection: 2
+      option  Template engine?
+          1)  ERB
+          2)  Haml
+          3)  Slim
+      choose  Enter your selection: 2
+      option  Test framework?
+          1)  None
+          2)  RSpec
+      choose  Enter your selection: 2
+       setup  Adding DatabaseCleaner, FactoryGirl, Faker, Launchy, Selenium
+      option  Continuous testing?
+          1)  None
+          2)  Guard
+      choose  Enter your selection: 2
+      option  Front-end framework?
+          1)  None
+          2)  Bootstrap 4.0
+          3)  Bootstrap 3.3
+          4)  Bootstrap 2.3
+          5)  Zurb Foundation 5.5
+          6)  Zurb Foundation 4.0
+          7)  Simple CSS
+      choose  Enter your selection: 2
+      option  How to install jQuery?
+          1)  Add jquery-rails gem
+          2)  Add using yarn
+      choose  Enter your selection: 2
+       setup  The Devise 'forgot password' feature requires email.
+      option  Add support for sending email?
+          1)  None
+          2)  Gmail
+          3)  SMTP
+          4)  SendGrid
+          5)  Mandrill
+      choose  Enter your selection: 2
+      option  Devise modules?
+          1)  Devise with default modules
+          2)  Devise with Confirmable module
+          3)  Devise with Confirmable and Invitable modules
+      choose  Enter your selection: 1
+      option  Admin interface for database?
+          1)  None
+          2)  Thoughtbot Administrate
+      choose  Enter your selection: 1
+      create    config/railscomposer.yml
+      append    config/railscomposer.yml
+      recipe  Running locale recipe...
+      recipe  Running readme recipe...
+      recipe  Running gems recipe...
+      insert    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+        gsub    Gemfile
+         run    bundle exec yarn add jquery from "."
+yarn add v1.3.2
+info No lockfile found.
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+success Saved 1 new dependency.
+└─ jquery@3.2.1
+✨  Done in 0.87s.
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: Gemfile" from "."
+      recipe  Running tests recipe...
+      recipe  Running email recipe...
+      recipe  Running devise recipe...
+      recipe  Running omniauth recipe...
+      recipe  Running roles recipe...
+      recipe  Running frontend recipe...
+      recipe  Running pages recipe...
+      recipe  Running init recipe...
+      recipe  Running analytics recipe...
+      option  Install page-view analytics?
+          1)  None
+          2)  Google Analytics
+          3)  Segment.com
+      choose  Enter your selection: 2
+      option  Google Analytics ID? UA-111752078-1
+      recipe  Running deployment recipe...
+      option  Prepare for deployment?
+          1)  no
+          2)  Heroku
+          3)  Capistrano
+      choose  Enter your selection: 2
+  deployment  installing gems for Heroku
+      recipe  Running extras recipe...
+      option  Disable Rails Turbolinks? (y/n) n
+      option  Set a robots.txt file to ban spiders? (y/n) y
+      option  Create a GitHub repository? (y/n) y
+      create    .ruby-version
+      create    .ruby-gemset
+      extras  recipe adding better_errors gem
+      extras  recipe banning spiders by modifying 'public/robots.txt'
+    composer  Installing Bundler (in case it is not installed).
+         run    gem install bundler from "."
+Fetching: bundler-1.16.1.gem (100%)
+Successfully installed bundler-1.16.1
+Parsing documentation for bundler-1.16.1
+Installing ri documentation for bundler-1.16.1
+Done installing documentation for bundler after 8 seconds
+1 gem installed
+    composer  Installing gems. This will take a while.
+         run    bundle install --without production from "."
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies..........
+Using rake 12.3.0
+Using concurrent-ruby 1.0.5
+Fetching minitest 5.11.0
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubi 1.7.0
+Using mini_portile2 2.3.0
+Using crass 1.0.3
+Using rack 2.0.3
+Fetching nio4r 2.2.0
+Installing minitest 5.11.0
+Installing nio4r 2.2.0 with native extensions
+Using websocket-extensions 0.1.3
+Using mini_mime 1.0.0
+Using arel 8.0.0
+Using public_suffix 3.0.1
+Using execjs 2.7.0
+Using bcrypt 3.1.11
+Using coderay 1.1.2
+Using bindex 0.5.0
+Fetching popper_js 1.12.9
+Installing popper_js 1.12.9
+Using rb-fsevent 0.10.2
+Using ffi 1.9.18
+Using bundler 1.16.1
+Using byebug 9.1.0
+Using coffee-script-source 1.12.2
+Using method_source 0.9.0
+Using thor 0.20.0
+Using database_cleaner 1.6.2
+Using orm_adapter 0.5.0
+Using diff-lcs 1.3
+Using erubis 2.7.0
+Using formatador 0.2.5
+Using ruby_dep 1.5.0
+Using lumberjack 1.0.12
+Using nenv 0.3.0
+Using shellany 0.0.1
+Using guard-compat 1.2.1
+Using rspec-support 3.7.0
+Using temple 0.8.0
+Using tilt 2.0.8
+Using sexp_processor 4.10.0
+Using high_voltage 3.0.0
+Using hub 1.12.4
+Using multi_json 1.12.2
+Using pg 0.21.0
+Using puma 3.11.0
+Using rails_apps_pages 0.6.7
+Using rails_apps_testing 0.3.12
+Using rails_layout 1.0.41
+Using rubyzip 1.2.1
+Using turbolinks-source 5.0.3
+Using i18n 0.9.1
+Using tzinfo 1.2.4
+Using nokogiri 1.8.1
+Using rack-test 0.8.2
+Using warden 1.2.7
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mail 2.7.0
+Using addressable 2.5.2
+Fetching autoprefixer-rails 7.2.4
+Installing autoprefixer-rails 7.2.4
+Using better_errors 2.4.0
+Fetching uglifier 4.1.2
+Installing uglifier 4.1.2
+Using rb-inotify 0.9.10
+Using childprocess 0.8.0
+Using rb-fchange 0.0.6
+Using coffee-script 2.4.1
+Using pry 0.11.3
+Using notiffany 0.1.1
+Using rspec-core 3.7.0
+Using rspec-expectations 3.7.0
+Using rspec-mocks 3.7.0
+Using haml 5.0.4
+Using ruby_parser 3.10.1
+Using activesupport 5.1.4
+Using loofah 2.1.1
+Using xpath 2.1.0
+Fetching faker 1.8.7
+Installing faker 1.8.7
+Using turbolinks 5.0.1
+Using launchy 2.4.3
+Using sass-listen 4.0.0
+Using listen 3.1.5
+Using selenium-webdriver 3.8.0
+Using rspec 3.7.0
+Using html2haml 2.2.0
+Using rails-dom-testing 2.0.3
+Using rails-html-sanitizer 1.0.3
+Using globalid 0.4.1
+Using activemodel 5.1.4
+Using factory_bot 4.8.2
+Using jbuilder 2.7.0
+Using pundit 1.1.0
+Using spring 2.0.2
+Using capybara 2.16.1
+Fetching sass 3.5.4
+Installing sass 3.5.4
+Using guard 2.14.1
+Using actionview 5.1.4
+Using activejob 5.1.4
+Using activerecord 5.1.4
+Using spring-commands-rspec 1.0.4
+Using spring-watcher-listen 2.0.1
+Fetching bootstrap 4.0.0.beta3
+Installing bootstrap 4.0.0.beta3
+Using actionpack 5.1.4
+Using guard-bundler 2.1.0
+Using guard-rails 0.8.1
+Using guard-rspec 4.7.3
+Using actionmailer 5.1.4
+Using railties 5.1.4
+Using sprockets-rails 3.2.1
+Using coffee-rails 4.2.2
+Using responders 2.4.0
+Using factory_bot_rails 4.8.2
+Using haml-rails 1.0.0
+Using rspec-rails 3.7.2
+Using web-console 3.5.1
+Using sass-rails 5.0.7
+Fetching devise 4.4.0
+Installing devise 4.4.0
+Using actioncable 5.1.4
+Using rails 5.1.4
+Bundle complete! 39 Gemfile dependencies, 118 gems now installed.
+Gems in the group production were not installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+    composer  Updating gem paths.
+WARN: Unresolved specs during Gem::Specification.reset:
+      tzinfo (~> 1.1)
+      minitest (~> 5.1)
+      rack (~> 2.0)
+      rack-test (>= 0.6.3)
+      loofah (~> 2.0)
+      builder (~> 3.1)
+      rake (>= 0.8.7)
+      method_source (>= 0)
+      nokogiri (>= 1.6)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+    composer  Stage Two (running recipe 'stage_two' callbacks).
+    composer  importing html2haml conversion tool
+locale
+gems
+        gems  recipe stage two
+        gems  configuring database
+      remove    config/database.yml
+      create    config/database.yml
+      option  Username for PostgreSQL?(leave blank to use the app name)
+      option  Host for PostgreSQL in database.yml? (leave blank to use default socket connection)
+        gems  Creating a user named 'chimspec' for PostgreSQL
+         run    createuser --createdb chimspec from "."
+        gsub    config/database.yml
+        gsub    config/database.yml
+        gsub    config/database.yml
+        gsub    config/database.yml
+      option  Okay to drop all existing databases named chimspec? 'No' will abort immediately! (y/n)
+      option  Okay to drop all existing databases named chimspec? 'No' will abort immediately! (y/n) y
+         run    bundle exec rake db:drop from "."
+Dropped database 'chimspec_development'
+Dropped database 'chimspec_test'
+         run    bundle exec rake db:create:all from "."
+Created database 'chimspec_development'
+Created database 'chimspec_test'
+Created database 'chimspec_production'
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: create database" from "."
+gems
+        gems  recipe stage two
+        gems  running generators
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: generators" from "."
+On branch master
+nothing to commit, working tree clean
+tests
+       tests  recipe stage two
+       tests  recipe installing RSpec
+    generate    testing:configure rspec -f
+         run  rm -rf test/ from "."
+    generate  rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb
+      insert  .rspec
+      insert  .rspec
+        gsub  .rspec
+      insert  config/application.rb
+      create  spec/support/capybara.rb
+        gsub  spec/rails_helper.rb
+        gsub  spec/rails_helper.rb
+      create  spec/support/database_cleaner.rb
+      create  spec/support/factory_girl.rb
+       tests  recipe initializing Guard
+         run    bundle exec guard init from "."
+14:16:59 - INFO - Writing new Guardfile to /Users/old_faithful/workspace/chimspec/Guardfile
+14:16:59 - INFO - bundler guard added to Guardfile, feel free to edit it
+14:16:59 - INFO - rails guard added to Guardfile, feel free to edit it
+14:16:59 - INFO - rspec guard added to Guardfile, feel free to edit it
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: testing framework" from "."
+email
+       email  recipe stage two
+      insert    config/environments/development.rb
+      insert    config/environments/production.rb
+        gsub    config/environments/production.rb
+      insert    config/environments/development.rb
+      insert    config/environments/production.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: set email accounts" from "."
+devise
+      devise  recipe stage two
+        gsub    config/initializers/filter_parameter_logging.rb
+    generate    devise:install
+      create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+    generate    devise user
+      invoke  active_record
+      create    db/migrate/20180102191706_devise_create_users.rb
+      create    app/models/user.rb
+      invoke    rspec
+      create      spec/models/user_spec.rb
+       error      factory_girl [not found]
+      insert    app/models/user.rb
+       route  devise_for :users
+    generate    migration AddNameToUsers name:string
+      invoke  active_record
+      create    db/migrate/20180102191710_add_name_to_users.rb
+         run    bundle exec rake db:migrate from "."
+== 20180102191706 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0863s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0388s
+-- add_index(:users, :reset_password_token, {:unique=>true})
+   -> 0.0046s
+== 20180102191706 DeviseCreateUsers: migrated (0.1302s) =======================
+
+== 20180102191710 AddNameToUsers: migrating ===================================
+-- add_column(:users, :name, :string)
+   -> 0.0201s
+== 20180102191710 AddNameToUsers: migrated (0.0202s) ==========================
+
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: devise" from "."
+omniauth
+    omniauth  recipe stage two
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: omniauth" from "."
+On branch master
+nothing to commit, working tree clean
+roles
+       roles  recipe stage two
+    generate    migration AddRoleToUsers role:integer
+      invoke  active_record
+      create    db/migrate/20180102191719_add_role_to_users.rb
+      insert    app/models/user.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add roles to a User model" from "."
+frontend
+    frontend  recipe stage two
+    generate    layout:install bootstrap4 -f
+      remove  app/assets/stylesheets/application.css
+      create  app/assets/stylesheets/application.css.scss
+      create  app/assets/stylesheets/1st_load_framework.css.scss
+       force  app/assets/javascripts/application.js
+      remove  app/assets/stylesheets/simple.css
+      remove  app/assets/stylesheets/foundation_and_overrides.css.scss
+      append  app/assets/stylesheets/1st_load_framework.css.scss
+      remove  app/views/layouts/application.html.erb
+      create  app/views/layouts/application.html.haml
+      create  app/views/layouts/_messages.html.haml
+      create  app/views/layouts/_navigation.html.haml
+      create  app/views/layouts/_navigation_links.html.erb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: front-end framework" from "."
+pages
+       pages  recipe stage two
+    generate    pages:about -f
+    generate  pages:home -f
+      create  app/views/visitors/index.html.erb
+      create  app/controllers/visitors_controller.rb
+      insert  config/routes.rb
+      create  spec/features/visitors/home_page_spec.rb
+      create  app/views/pages/about.html.erb
+      create  spec/features/visitors/about_page_spec.rb
+    generate    pages:users -f
+      create  app/views/users/_user.html.erb
+      create  app/views/users/index.html.erb
+      create  app/views/users/show.html.erb
+    generate  pages:home -f
+   identical  spec/features/visitors/home_page_spec.rb
+       force  app/views/visitors/index.html.erb
+      create  app/controllers/users_controller.rb
+      insert  config/routes.rb
+      insert  app/controllers/application_controller.rb
+     prepend  app/views/users/_user.html.erb
+      insert  app/views/users/show.html.erb
+    generate    pages:authorized -f
+      create  config/initializers/pundit.rb
+       force  app/views/users/_user.html.erb
+       force  app/controllers/users_controller.rb
+      create  app/policies/user_policy.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add pages" from "."
+analytics
+   analytics  recipe stage two
+    generate    analytics:google -f
+      create  app/assets/javascripts/google_analytics.js.coffee
+        gsub    app/assets/javascripts/google_analytics.js.coffee
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add analytics" from "."
+extras
+      extras  recipe stage two
+        gsub    public/robots.txt
+        gsub    public/robots.txt
+    composer  Stage Three (running recipe 'stage_three' callbacks).
+readme
+      readme  recipe stage three
+      remove    README
+      remove    README.rdoc
+      remove    doc/README_FOR_APP
+      create    README
+      append    README
+      append    README
+      create    public/humans.txt
+      remove    README.md
+      create    README.md
+      append    README.md
+      append    README.md
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add README files" from "."
+tests
+       tests  recipe stage three
+    generate    testing:configure devise -f
+      create  spec/support/devise.rb
+      create  spec/support/helpers/session_helpers.rb
+      create  spec/support/helpers.rb
+      create  spec/factories/users.rb
+       force  spec/models/user_spec.rb
+      create  spec/features/users/sign_in_spec.rb
+      create  spec/features/users/sign_out_spec.rb
+      create  spec/features/users/user_delete_spec.rb
+      create  spec/features/users/user_edit_spec.rb
+      create  spec/features/users/user_index_spec.rb
+      create  spec/features/users/user_show_spec.rb
+      create  spec/features/visitors/sign_up_spec.rb
+    generate    testing:configure pundit -f
+/Users/old_faithful/workspace/chimspec/spec/factories/users.rb:1:in `<top (required)>': uninitialized constant FactoryGirl (NameError)
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:20:in `block (2 levels) in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `block in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot_rails-4.8.2/lib/factory_bot_rails/railtie.rb:21:in `block in <class:Railtie>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application/finisher.rb:73:in `block in <module:Finisher>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:59:in `block in run_initializers'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `call'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:226:in `tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:205:in `tsort_each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:58:in `run_initializers'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:353:in `initialize!'
+	from /Users/old_faithful/workspace/chimspec/config/environment.rb:5:in `<top (required)>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:329:in `require_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/actions.rb:16:in `require_application_and_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands/generate/generate_command.rb:19:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/base.rb:63:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command.rb:44:in `invoke'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+init
+        init  recipe stage three
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+      insert    config/secrets.yml
+        gsub    config/initializers/devise.rb
+      remove    db/seeds.rb
+      create    db/seeds.rb
+      remove    app/services/create_admin_service.rb
+      create    app/services/create_admin_service.rb
+        init  applying migrations and seeding the database
+         run    bundle exec rake db:migrate from "."
+rake aborted!
+NameError: uninitialized constant FactoryGirl
+/Users/old_faithful/workspace/chimspec/spec/factories/users.rb:1:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:20:in `block (2 levels) in find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `block in find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot_rails-4.8.2/lib/factory_bot_rails/railtie.rb:21:in `block in <class:Railtie>'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application/finisher.rb:73:in `block in <module:Finisher>'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:59:in `block in run_initializers'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:58:in `run_initializers'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:353:in `initialize!'
+/Users/old_faithful/workspace/chimspec/config/environment.rb:5:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:329:in `require_environment!'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:445:in `block in run_tasks_blocks'
+/usr/local/lib/ruby/gems/2.4.0/gems/rake-12.3.0/exe/rake:27:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+/usr/local/bin/bundle:23:in `load'
+/usr/local/bin/bundle:23:in `<main>'
+Tasks: TOP => db:migrate => environment
+(See full trace by running task with --trace)
+         run    bundle exec rake db:seed from "."
+rake aborted!
+NameError: uninitialized constant FactoryGirl
+/Users/old_faithful/workspace/chimspec/spec/factories/users.rb:1:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:20:in `block (2 levels) in find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `block in find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `find_definitions'
+/usr/local/lib/ruby/gems/2.4.0/gems/factory_bot_rails-4.8.2/lib/factory_bot_rails/railtie.rb:21:in `block in <class:Railtie>'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application/finisher.rb:73:in `block in <module:Finisher>'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:59:in `block in run_initializers'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:58:in `run_initializers'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:353:in `initialize!'
+/Users/old_faithful/workspace/chimspec/config/environment.rb:5:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:329:in `require_environment!'
+/usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:445:in `block in run_tasks_blocks'
+/usr/local/lib/ruby/gems/2.4.0/gems/activerecord-5.1.4/lib/active_record/railties/databases.rake:183:in `block (2 levels) in <top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/rake-12.3.0/exe/rake:27:in `<top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+/usr/local/lib/ruby/gems/2.4.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+/usr/local/bin/bundle:23:in `load'
+/usr/local/bin/bundle:23:in `<main>'
+Tasks: TOP => db:abort_if_pending_migrations => environment
+(See full trace by running task with --trace)
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: set up database" from "."
+    generate    layout:devise bootstrap3 -f
+/Users/old_faithful/workspace/chimspec/spec/factories/users.rb:1:in `<top (required)>': uninitialized constant FactoryGirl (NameError)
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:20:in `block (2 levels) in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `block in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot_rails-4.8.2/lib/factory_bot_rails/railtie.rb:21:in `block in <class:Railtie>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application/finisher.rb:73:in `block in <module:Finisher>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:59:in `block in run_initializers'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `call'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:226:in `tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:205:in `tsort_each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:58:in `run_initializers'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:353:in `initialize!'
+	from /Users/old_faithful/workspace/chimspec/config/environment.rb:5:in `<top (required)>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:329:in `require_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/actions.rb:16:in `require_application_and_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands/generate/generate_command.rb:19:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/base.rb:63:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command.rb:44:in `invoke'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+    generate    layout:navigation bootstrap4 -f
+/Users/old_faithful/workspace/chimspec/spec/factories/users.rb:1:in `<top (required)>': uninitialized constant FactoryGirl (NameError)
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:20:in `block (2 levels) in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:19:in `block in find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot-4.8.2/lib/factory_bot/find_definitions.rb:15:in `find_definitions'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/factory_bot_rails-4.8.2/lib/factory_bot_rails/railtie.rb:21:in `block in <class:Railtie>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:67:in `block in execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/activesupport-5.1.4/lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application/finisher.rb:73:in `block in <module:Finisher>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:59:in `block in run_initializers'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:228:in `block in tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:431:in `each_strongly_connected_component_from'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:349:in `block in each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `call'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:347:in `each_strongly_connected_component'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:226:in `tsort_each'
+	from /usr/local/Cellar/ruby/2.4.2_1/lib/ruby/2.4.0/tsort.rb:205:in `tsort_each'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/initializable.rb:58:in `run_initializers'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:353:in `initialize!'
+	from /Users/old_faithful/workspace/chimspec/config/environment.rb:5:in `<top (required)>'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:329:in `require_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/actions.rb:16:in `require_application_and_environment!'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands/generate/generate_command.rb:19:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command/base.rb:63:in `perform'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/command.rb:44:in `invoke'
+	from /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: navigation links" from "."
+On branch master
+nothing to commit, working tree clean
+deployment
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: prepare for deployment" from "."
+On branch master
+nothing to commit, working tree clean
+extras
+      extras  recipe stage three
+      extras  recipe creating GitHub repository
+         run    hub create chimspec from "."
+/usr/local/lib/ruby/gems/2.4.0/gems/hub-1.12.4/lib/hub/speedy_stdlib.rb:103: warning: constant ::Fixnum is deprecated
+/usr/local/lib/ruby/gems/2.4.0/gems/hub-1.12.4/lib/hub/speedy_stdlib.rb:103: warning: constant ::Fixnum is deprecated
+Updating origin
+Enter passphrase for key '/Users/old_faithful/.ssh/id_rsa':
+created repository: bjlinville1/chimspec
+         run    hub push -u origin master from "."
+Enter passphrase for key '/Users/old_faithful/.ssh/id_rsa':
+Counting objects: 372, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (340/340), done.
+Writing objects: 100% (372/372), 408.46 KiB | 2.60 MiB/s, done.
+Total 372 (delta 61), reused 0 (delta 0)
+remote: Resolving deltas: 100% (61/61), done.
+To github.com:bjlinville1/chimspec.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+    composer  Stage Four (running recipe 'stage_four' callbacks).
+pages
+       pages  recipe stage four
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: add Bootstrap page layouts" from "."
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+extras
+      extras  recipe stage four
+      extras  recipe removing unnecessary files and whitespace
+      remove    public/index.html
+      remove    app/assets/images/rails.png
+        gsub    Gemfile
+        gsub    Gemfile
+      remove    config/railscomposer.yml
+        gsub    Gemfile
+        gsub    Gemfile
+      remove    Gemfile.lock
+        gsub    config/routes.rb
+        gsub    config/routes.rb
+         run    git add -A from "."
+         run    git commit -qm "rails_apps_composer: extras" from "."
+    composer  Your new application will contain diagnostics in its README file.
+    composer  When reporting an issue on GitHub, include the README diagnostics.
+    composer  Finished running the rails_apps_composer app template.
+    composer  Your new Rails app is ready. Time to run 'bundle install'.
+         run  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies.........
+Using rake 12.3.0
+Using concurrent-ruby 1.0.5
+Using minitest 5.11.0
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubi 1.7.0
+Using mini_portile2 2.3.0
+Using crass 1.0.3
+Using rack 2.0.3
+Using nio4r 2.2.0
+Using websocket-extensions 0.1.3
+Using mini_mime 1.0.0
+Using arel 8.0.0
+Using public_suffix 3.0.1
+Using execjs 2.7.0
+Using bcrypt 3.1.11
+Using coderay 1.1.2
+Using bindex 0.5.0
+Using popper_js 1.12.9
+Using rb-fsevent 0.10.2
+Using ffi 1.9.18
+Using bundler 1.16.1
+Using byebug 9.1.0
+Using coffee-script-source 1.12.2
+Using method_source 0.9.0
+Using thor 0.20.0
+Using database_cleaner 1.6.2
+Using orm_adapter 0.5.0
+Using diff-lcs 1.3
+Using erubis 2.7.0
+Using formatador 0.2.5
+Using ruby_dep 1.5.0
+Using lumberjack 1.0.12
+Using nenv 0.3.0
+Using shellany 0.0.1
+Using guard-compat 1.2.1
+Using rspec-support 3.7.0
+Using temple 0.8.0
+Using tilt 2.0.8
+Using sexp_processor 4.10.0
+Using high_voltage 3.0.0
+Using hub 1.12.4
+Using multi_json 1.12.2
+Using pg 0.21.0
+Using puma 3.11.0
+Using rails_layout 1.0.41
+Using rubyzip 1.2.1
+Using turbolinks-source 5.0.3
+Using i18n 0.9.1
+Using tzinfo 1.2.4
+Using nokogiri 1.8.1
+Using rack-test 0.8.2
+Using warden 1.2.7
+Using sprockets 3.7.1
+Using websocket-driver 0.6.5
+Using mail 2.7.0
+Using addressable 2.5.2
+Using autoprefixer-rails 7.2.4
+Using uglifier 4.1.2
+Using better_errors 2.4.0
+Using rb-inotify 0.9.10
+Using childprocess 0.8.0
+Using rb-fchange 0.0.6
+Using coffee-script 2.4.1
+Using pry 0.11.3
+Using notiffany 0.1.1
+Using rspec-core 3.7.0
+Using rspec-expectations 3.7.0
+Using rspec-mocks 3.7.0
+Using haml 5.0.4
+Using ruby_parser 3.10.1
+Using faker 1.8.7
+Using turbolinks 5.0.1
+Using activesupport 5.1.4
+Using loofah 2.1.1
+Using xpath 2.1.0
+Using launchy 2.4.3
+Using sass-listen 4.0.0
+Using listen 3.1.5
+Using selenium-webdriver 3.8.0
+Using rspec 3.7.0
+Using html2haml 2.2.0
+Using rails-dom-testing 2.0.3
+Using rails-html-sanitizer 1.0.3
+Using globalid 0.4.1
+Using activemodel 5.1.4
+Using factory_bot 4.8.2
+Using jbuilder 2.7.0
+Using pundit 1.1.0
+Using spring 2.0.2
+Using capybara 2.16.1
+Using sass 3.5.4
+Using guard 2.14.1
+Using actionview 5.1.4
+Using activejob 5.1.4
+Using activerecord 5.1.4
+Using spring-commands-rspec 1.0.4
+Using spring-watcher-listen 2.0.1
+Using bootstrap 4.0.0.beta3
+Using guard-bundler 2.1.0
+Using guard-rails 0.8.1
+Using guard-rspec 4.7.3
+Using actionpack 5.1.4
+Using actioncable 5.1.4
+Using actionmailer 5.1.4
+Using railties 5.1.4
+Using sprockets-rails 3.2.1
+Using coffee-rails 4.2.2
+Using responders 2.4.0
+Using factory_bot_rails 4.8.2
+Using haml-rails 1.0.0
+Using rspec-rails 3.7.2
+Using web-console 3.5.1
+Using rails 5.1.4
+Using sass-rails 5.0.7
+Using devise 4.4.0
+Bundle complete! 37 Gemfile dependencies, 116 gems now installed.
+Gems in the group production were not installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rspec: generated with spring
+* bin/rails: spring inserted
