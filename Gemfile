@@ -11,6 +11,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'beautiful_scaffold', '1.0.1'
+gem 'simple_form'
+gem 'therubyracer'
+gem 'jquery-rails'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
@@ -51,3 +55,16 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+
+gem 'less-rails', '2.8.0'
+gem 'will_paginate'
+gem 'ransack', '1.8.2'
+gem 'polyamorous', '1.3.1'
+gem 'jquery-ui-rails'
+gem 'prawn', '2.1.0'
+gem 'prawn-table', '0.2.2'
+gem 'sanitize'
+gem 'twitter-bootstrap-rails', '3.2.2'
+gem 'chardinjs-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'

@@ -1,0 +1,82 @@
+
+<%= form_for(@inspection) do |f| %>
+  <% if @inspection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inspection.errors.count, "error") %> prohibited this inspection from being saved:</h2>
+
+      <ul>
+        <% @inspection.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class="form-group">
+      <%= f.label :street_address, t('app.models.inspection.bs_attributes.street_address', :default => 'street_address').capitalize, :class => "control-label" %>
+      <%= f.text_field :street_address, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :visible, t('app.models.inspection.bs_attributes.visible', :default => 'visible').capitalize, :class => "control-label" %>
+      <%= f.check_box :visible, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :chimney_cap_spark_arrestor, t('app.models.inspection.bs_attributes.chimney_cap_spark_arrestor', :default => 'chimney_cap_spark_arrestor').capitalize, :class => "control-label" %>
+      <%= f.text_field :chimney_cap_spark_arrestor, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :chimney_height, t('app.models.inspection.bs_attributes.chimney_height', :default => 'chimney_height').capitalize, :class => "control-label" %>
+      <%= f.text_field :chimney_height, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :crown_wash, t('app.models.inspection.bs_attributes.crown_wash', :default => 'crown_wash').capitalize, :class => "control-label" %>
+      <%= f.text_field :crown_wash, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :flashing, t('app.models.inspection.bs_attributes.flashing', :default => 'flashing').capitalize, :class => "control-label" %>
+      <%= f.text_field :flashing, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :flue_liner_condition, t('app.models.inspection.bs_attributes.flue_liner_condition', :default => 'flue_liner_condition').capitalize, :class => "control-label" %>
+      <%= f.text_field :flue_liner_condition, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :flue_liner_proper_size, t('app.models.inspection.bs_attributes.flue_liner_proper_size', :default => 'flue_liner_proper_size').capitalize, :class => "control-label" %>
+      <%= f.text_field :flue_liner_proper_size, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :proper_flue_material_for_appliance, t('app.models.inspection.bs_attributes.proper_flue_material_for_appliance', :default => 'proper_flue_material_for_appliance').capitalize, :class => "control-label" %>
+      <%= f.text_field :proper_flue_material_for_appliance, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :moisture_resistance, t('app.models.inspection.bs_attributes.moisture_resistance', :default => 'moisture_resistance').capitalize, :class => "control-label" %>
+      <%= f.text_field :moisture_resistance, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :smoke_chamber_smooth_parged, t('app.models.inspection.bs_attributes.smoke_chamber_smooth_parged', :default => 'smoke_chamber_smooth_parged').capitalize, :class => "control-label" %>
+      <%= f.text_field :smoke_chamber_smooth_parged, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :flue_tile_sealed_smoke_chamber, t('app.models.inspection.bs_attributes.flue_tile_sealed_smoke_chamber', :default => 'flue_tile_sealed_smoke_chamber').capitalize, :class => "control-label" %>
+      <%= f.text_field :flue_tile_sealed_smoke_chamber, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :brick_and_mortar, t('app.models.inspection.bs_attributes.brick_and_mortar', :default => 'brick_and_mortar').capitalize, :class => "control-label" %>
+      <%= f.text_field :brick_and_mortar, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :smoke_shelf, t('app.models.inspection.bs_attributes.smoke_shelf', :default => 'smoke_shelf').capitalize, :class => "control-label" %>
+      <%= f.text_field :smoke_shelf, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :connector_to_flue, t('app.models.inspection.bs_attributes.connector_to_flue', :default => 'connector_to_flue').capitalize, :class => "control-label" %>
+      <%= f.text_field :connector_to_flue, :class => "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :inspector_name, t('app.models.inspection.bs_attributes.inspector_name', :default => 'inspector_name').capitalize, :class => "control-label" %>
+      <%= f.text_field :inspector_name, :class => "form-control" %>
+    </div>
+<!-- Beautiful_scaffold - AddField - Do not remove -->
+  <div>
+    <%= f.submit :class => "btn btn-primary", :data => { :disable_with => t(:saving, :default => "Saving...") } %>
+  </div>
+<% end %>
+
+

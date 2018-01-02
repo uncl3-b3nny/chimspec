@@ -1,0 +1,5 @@
+<h2><%= t(:new, :default => 'New') %> <%= t('app.models.inspection.bs_caption', :default => 'inspection') %></h2>
+
+<%= render 'form' %>
+
+<%= link_to t(:back, :default => "Back"), inspections_path, :class => "btn btn-default" %>

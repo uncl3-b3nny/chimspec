@@ -1,0 +1,72 @@
+<h2><%= t(:show, :default => "Show") %> <%= t('app.models.inspection.bs_caption', :default => 'inspection') %></h2>
+
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.street_address', :default => 'street_address') %>:</b>
+      <%= @inspection.street_address %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.visible', :default => 'visible') %>:</b>
+      <%= t((@inspection.visible ? "yes".to_sym : "no".to_sym)) %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.chimney_cap_spark_arrestor', :default => 'chimney_cap_spark_arrestor') %>:</b>
+      <%= @inspection.chimney_cap_spark_arrestor %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.chimney_height', :default => 'chimney_height') %>:</b>
+      <%= @inspection.chimney_height %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.crown_wash', :default => 'crown_wash') %>:</b>
+      <%= @inspection.crown_wash %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.flashing', :default => 'flashing') %>:</b>
+      <%= @inspection.flashing %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.flue_liner_condition', :default => 'flue_liner_condition') %>:</b>
+      <%= @inspection.flue_liner_condition %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.flue_liner_proper_size', :default => 'flue_liner_proper_size') %>:</b>
+      <%= @inspection.flue_liner_proper_size %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.proper_flue_material_for_appliance', :default => 'proper_flue_material_for_appliance') %>:</b>
+      <%= @inspection.proper_flue_material_for_appliance %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.moisture_resistance', :default => 'moisture_resistance') %>:</b>
+      <%= @inspection.moisture_resistance %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.smoke_chamber_smooth_parged', :default => 'smoke_chamber_smooth_parged') %>:</b>
+      <%= @inspection.smoke_chamber_smooth_parged %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.flue_tile_sealed_smoke_chamber', :default => 'flue_tile_sealed_smoke_chamber') %>:</b>
+      <%= @inspection.flue_tile_sealed_smoke_chamber %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.brick_and_mortar', :default => 'brick_and_mortar') %>:</b>
+      <%= @inspection.brick_and_mortar %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.smoke_shelf', :default => 'smoke_shelf') %>:</b>
+      <%= @inspection.smoke_shelf %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.connector_to_flue', :default => 'connector_to_flue') %>:</b>
+      <%= @inspection.connector_to_flue %>
+  </p>
+  <p>
+    <b><%= t('app.models.inspection.bs_attributes.inspector_name', :default => 'inspector_name') %>:</b>
+      <%= @inspection.inspector_name %>
+  </p>
+
+<!-- Beautiful_scaffold - AddField - Field - Do not remove -->
+
+<%= link_to t(:edit, :default => "Edit"), edit_inspection_path(@inspection), :class => "btn btn-default" %>
+<%= link_to t(:back, :default => "Back"), inspections_path, :class => "btn btn-default" %>
+

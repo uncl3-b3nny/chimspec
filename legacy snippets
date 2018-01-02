@@ -1,0 +1,4 @@
+legacy snippets
+
+	#sidebar-menu from beatiful_layouts.html.erb
+        <%= render :partial => "layouts/beautiful_menu" %>
